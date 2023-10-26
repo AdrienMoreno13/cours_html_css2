@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tableau.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tableau.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form action="traitementForm.php" method="GET">
+      <label for="input_nom">Nom :</label>
+      <input type="text" name="nom" id="input_nom" placeholder="Nom" />
+      <input type="text" name="prenom" placeholder="Prénom" />
+      <input type="email" name="email" placeholder="E-mail" />
+      <input type="date" name="Date" placeholder="JJ/MM/AAAA" />
+    </form>
+    <br />
     <table>
-        <caption>Site pour les jeux vidéos</caption>
+      <caption>
+        Site pour les jeux vidéos
+      </caption>
+      <thead>
         <tr>
-            <th>Nom</th>
-            <th>Description</th>
-            <th>Adresse</th>
+          <th>Nom</th>
+          <th>Description</th>
+          <th>Adresse</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jeux vidéos.com</td>
+          <td>Site d'information sur l'actualité du jeu vidéo</td>
+          <td><a href="https://www.jeuxvideo.com/">www.jeuxvideo.com/</a></td>
         </tr>
         <tr>
-            <td>Jeux vidéos.com</td>
-            <td>Site d'information sur l'actualité du jeu vidéo</td>
-            <td><a href="https://www.jeuxvideo.com/">www.jeuxvideo.com/</a></td>
+          <td>Steam</td>
+          <td>Plateforme de distribution de jeux vidéos</td>
+          <td>
+            <a href="https://store.steampowered.com/"
+              >www.store.steampowered.com/</a
+            >
+          </td>
         </tr>
         <tr>
-            <td>Steam</td>
-            <td>Plateforme de distribution de jeux vidéos</td>
-            <td><a href="https://store.steampowered.com/">store.steampowered.com/</a></td>
+          <td>Ubisoft</td>
+          <td>
+            Plateforme de distribution de jeux vidéos et développeur français
+          </td>
+          <td><a href="https://www.ubisoft.com/">www.ubisoft.com/</a></td>
         </tr>
         <tr>
-            <td>Ubisoft</td>
-            <td>Plateforme de distribution de jeux vidéos et développeur français</td>
-            <td><a href="https://www.ubisoft.com/">www.ubisoft.com/</a></td>
+          <td>Romstation</td>
+          <td>Plateforme pour l'émulation de jeux vidéos rétro</td>
+          <td><a href="https://www.romstation.fr/">www.romstation.fr/</a></td>
         </tr>
-        <tr>
-            <td>Romstation</td>
-            <td>Plateforme pour l'émulation de jeux vidéos rétro</td>
-            <td><a href="https://www.romstation.fr/">www.romstation.fr/</a></td>
-        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
