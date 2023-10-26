@@ -7,13 +7,27 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="traitementForm.php" method="GET">
-      <label for="input_nom">Nom :</label>
-      <input type="text" name="nom" id="input_nom" placeholder="Nom" />
-      <input type="text" name="prenom" placeholder="Prénom" />
-      <input type="email" name="email" placeholder="E-mail" />
-      <input type="date" name="Date" placeholder="JJ/MM/AAAA" />
-    </form>
+    <fieldset>
+      <legend>Info Personnelles</legend>
+      <form action="traitementForm.php" method="GET">
+        Nom : <input type="text" name="nom" placeholder="Nom" /><br />
+        Prenom : <input type="text" name="prenom" placeholder="Prénom" /><br />
+        Email : <input type="email" name="email" placeholder="E-mail" /><br />
+        Numéro : <input type="tel" name="tel" placeholder="Numéro" /><br />
+        Date : <input type="date" name="Date" placeholder="JJ/MM/AAAA" />
+      </form>
+      <form method="POST" action="MonProgramme.php">
+        Mot de passe:<input type="password" placeholder="Ex: P@ssWo4d" /><br />
+        Age:<input type="number" placeholder="Ex: 15" /><br />
+        Laissez un commentaire:
+        <br />
+        <textarea
+          placeholder="Un très long texte"
+          cols="70"
+          rows="10"
+        ></textarea>
+      </form>
+    </fieldset>
     <br />
     <table>
       <caption>
