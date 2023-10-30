@@ -7,27 +7,6 @@
     <title>Document</title>
   </head>
   <body>
-    <fieldset>
-      <legend>Info Personnelles</legend>
-      <form action="traitementForm.php" method="GET">
-        Nom : <input type="text" name="nom" placeholder="Nom" /><br />
-        Prenom : <input type="text" name="prenom" placeholder="Prénom" /><br />
-        Email : <input type="email" name="email" placeholder="E-mail" /><br />
-        Numéro : <input type="tel" name="tel" placeholder="Numéro" /><br />
-        Date : <input type="date" name="Date" placeholder="JJ/MM/AAAA" />
-      </form>
-      <form method="POST" action="MonProgramme.php">
-        Mot de passe:<input type="password" placeholder="Ex: P@ssWo4d" /><br />
-        Age:<input type="number" placeholder="Ex: 15" /><br />
-        Laissez un commentaire:
-        <br />
-        <textarea
-          placeholder="Un très long texte"
-          cols="70"
-          rows="10"
-        ></textarea>
-      </form>
-    </fieldset>
     <br />
     <table>
       <caption>
@@ -67,6 +46,36 @@
           <td>Plateforme pour l'émulation de jeux vidéos rétro</td>
           <td><a href="https://www.romstation.fr/">www.romstation.fr/</a></td>
         </tr>
+        <td>BattleNet</td>
+        <td>Site de téléchargement blizzard</td>
+        <td><a href="https://www.battle.net">www.battle.net</a></td>
+      </tbody>
+    </table>
+    <table>
+      <caption>
+        Films Ghibli à voir
+      </caption>
+      <thead>
+        <tr>
+          <th>Réalisateur</th>
+          <th>Nom</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Hayao Miyazaki</td>
+          <td>Porco Rosso</td>
+          <td>1992</td>
+        </tr>
+        <tr>
+         <td>Princesse Mononoke</td>
+         <td>1997</td>
+        </tr>
+        <tr>
+          <td>Le Voyage de Chihiro</td>
+          <td>2002</td>
+        </tr> 
       </tbody>
     </table>
   </body>
